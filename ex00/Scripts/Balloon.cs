@@ -14,8 +14,6 @@ public class Balloon : MonoBehaviour {
 		{
 			Debug.Log("Balloon life time: " + Mathf.RoundToInt(Time.time) + "s");
 			Destroy(gameObject);
-            print("sizeBalloon : " + transform.localScale);
-            print("normalize sizeBalloon : " + transform.localScale.normalized);
 		}
         inflate |= Input.GetKeyDown("space");
         inflate &= !Input.GetKeyUp("space");
