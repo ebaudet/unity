@@ -20,7 +20,7 @@ public class Balloon : MonoBehaviour {
         inflate |= Input.GetKeyDown("space");
         inflate &= !Input.GetKeyUp("space");
         if (inflate) {
-			transform.localScale += new Vector3(0.1F, 0.1F, 0.1F) * ( breath / 100);
+			transform.localScale += new Vector3(0.1F, 0.1F, 0.1F) * (breath / 100);
             sizeBallon += 1 * ( breath / 100);
             if (breath > 0)
 				breath -= 1;
