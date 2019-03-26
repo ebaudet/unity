@@ -4,49 +4,73 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-	public bool 	load = false;
-	private float 	_speed = 0;
-	private int 	direction;
-	private float 	hole;
+	public GameObject 	club;
+	private float 		_speed = 0;
+	private int 		_direction;
+	private float 		_hole;
+	private int 		_score;
+	private bool 		count = false;
 
 	void Start()
 	{
-		hole = 3F;
-		direction = (hole - transform.position.y < 0) ? 1 : -1;
+		_hole = 3F;
+		_direction = (_hole - transform.position.y < 0) ? 1 : -1;
+		_score = -15;
+		PutClub();
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		load |= Input.GetKeyDown("space");
-		load &= !Input.GetKeyUp("space");
-
-		if (load)
+		if (transform.position.y >= _hole - 0.2F && transform.position.y <= _hole + 0.2F && _speed <= 0.7F)
+		{
+			_speed = 0;
+			Debug.Log("Score: " + Mathf.Clamp(_score, -15, 0));
+			Destroy(club);
+			return;
+		}
+			
+		if (Input.GetKey("space"))
 		{
 			_speed += 0.1F;
-			direction = (hole - transform.position.y < 0) ? 1 : -1;
+			_direction = (_hole - transform.position.y < 0) ? 1 : -1;
+			count = true;
 		}
-
-		if (!load && _speed > 0)
+		else
 		{
-			transform.Translate(new Vector3(0, direction * (_speed + 1) * -0.1F, 0));
-			_speed -= 0.1F;
-			if (transform.position.y > 4.8F && direction < 0)
-				direction = 1;
-			if (transform.position.y < -4.8F && direction > 0)
-				direction = -1;
-//			direction = (hole - transform.position.y < 0) ? 1 : -1;
-//			move();
+			if (_speed > 0)
+			{
+				transform.Translate(new Vector3(0, _direction * (_speed + 1) * -0.1F, 0));
+				_speed -= 0.1F;
+				if (transform.position.y > 4.8F && _direction < 0)
+					_direction = 1;
+				if (transform.position.y < -4.8F && _direction > 0)
+					_direction = -1;
+			}
+			else
+			{
+				if (count)
+				{
+					_score += 5;
+					count = false;
+				}
+				Destroy(club);
+				_direction = (_hole - transform.position.y < 0) ? 1 : -1;
+				PutClub();
+			}
 		}
 	}
 
-//	void move()
-//	{
-//		if (_speed > 0)
-//		{
-//			transform.Translate(new Vector3(0, direction * (_speed + 1) * -0.1F, 0));
-//			direction = (hole - transform.position.y < 0) ? -1 : 1;
-//			_speed -= 0.2F;
-//		}
-//	}
+	private void PutClub()
+	{
+		if (_direction < 0)
+		{
+			club = Instantiate(club, new Vector3(-0.15F, transform.position.y, 0), Quaternion.identity);
+		}
+		else
+		{
+			club = Instantiate(club, new Vector3(0.15F, transform.position.y + 0.9F, 0), Quaternion.identity);
+			club.transform.localRotation  = Quaternion.Euler(0, 180, 0);
+		}
+	}
 }
