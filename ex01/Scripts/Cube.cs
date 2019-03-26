@@ -5,6 +5,12 @@ using UnityEngine;
 public class Cube : MonoBehaviour
 {
 	public string 		key;
+	public float 		speed;
+
+	private void Start()
+	{
+		speed = Random.Range(0.5F, 1F);
+	}
 
 	// Update is called once per frame
 	void Update () {
@@ -16,6 +22,6 @@ public class Cube : MonoBehaviour
 			Debug.Log("Precision: " + (transform.position.y + 2));
 			Destroy(gameObject);
 		}
-		transform.Translate(new Vector3(0, -0.05F, 0));
+		transform.Translate(new Vector3(0, speed * -0.05F, 0));
 	}
 }

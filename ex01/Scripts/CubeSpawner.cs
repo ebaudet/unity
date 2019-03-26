@@ -7,12 +7,16 @@ public class CubeSpawner : MonoBehaviour {
 	public float		spawnTime;
 	public float 		timer;
 
-
     void Update () {
 		if (timer > spawnTime)
 		{
-			timer = 0;
-            Instantiate(cube, cube.transform.localPosition, Quaternion.identity);
+			if (Random.Range(0, 100) > 95)
+			{
+				timer = 0;
+				Instantiate(cube, cube.transform.localPosition, Quaternion.identity);
+			}
+//            tmp = Instantiate(cube, cube.transform.localPosition, Quaternion.identity);
+//			tmp.speed = Random.Range(0.5F, 1F);
 		}
         timer += Time.deltaTime;
 	}
