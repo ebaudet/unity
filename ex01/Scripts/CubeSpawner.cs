@@ -11,7 +11,9 @@ public class CubeSpawner : MonoBehaviour {
 		if (timer > spawnTime)
 		{
 			timer = 0;
-            Vector3 newPos = new Vector3(cube.transform.localPosition.x, cube.transform.localPosition.y, cube.transform.localPosition.z);
+            //Vector3 newPos = new Vector3(cube.transform.localPosition.x, cube.transform.localPosition.y, cube.transform.localPosition.z);
+            GameObject.Instantiate(cube, cube.transform.localPosition, Quaternion.identity);
 		}
+        timer += Time.deltaTime;
 	}
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cube.cs : MonoBehaviour {
+public class Cube : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
