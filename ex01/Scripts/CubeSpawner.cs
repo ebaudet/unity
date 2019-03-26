@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class CubeSpawner : MonoBehaviour {
 	public GameObject	cube;
-	public float		spawnTime;
-	public float 		timer;
+	private float		_spawnTime = 4;
+	private float 		_timer = 4;
+	private GameObject _instance;
 
     void Update () {
-		if (timer > spawnTime)
+		if (_timer > _spawnTime)
 		{
-			if (Random.Range(0, 100) > 95)
+			if (Random.Range(0, 100) > 95 && !_instance)
 			{
-				timer = 0;
-				Instantiate(cube, cube.transform.localPosition, Quaternion.identity);
+				_timer = 0;
+				_instance = Instantiate(cube, cube.transform.localPosition, Quaternion.identity);
 			}
-//            tmp = Instantiate(cube, cube.transform.localPosition, Quaternion.identity);
-//			tmp.speed = Random.Range(0.5F, 1F);
 		}
-        timer += Time.deltaTime;
+        _timer += Time.deltaTime;
 	}
 }
