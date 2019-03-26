@@ -10,8 +10,8 @@ public class CubeSpawner : MonoBehaviour {
 	void Update () {
 		if (timer > spawnTime)
 		{
-			Time = 0;
-			Vector3 newPos = new Vector3(cube)
+			timer = 0;
+            Vector3 newPos = new Vector3(cube.transform.localPosition.x, cube.transform.localPosition.y, cube.transform.localPosition.z);
 		}
 	}
 }
