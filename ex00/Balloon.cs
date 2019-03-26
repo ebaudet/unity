@@ -6,7 +6,7 @@ public class Balloon : MonoBehaviour {
 
 	public bool			inflate;
 	public float		sizeBallon = 10;
-	public int 			breath = 20;
+	public int 			breath = 100;
 
 	// Update is called once per frame
 	void Update () {
@@ -14,24 +14,22 @@ public class Balloon : MonoBehaviour {
 		{
 			Debug.Log("Balloon life time: " + Mathf.RoundToInt(Time.time) + "s");
 			Destroy(gameObject);
+            print("sizeBalloon : " + transform.localScale);
+            print("normalize sizeBalloon : " + transform.localScale.normalized);
 		}
-		if (Input.GetKeyDown("space")) {
-			inflate = true;
-		}
-		if (Input.GetKeyUp("space")) {
-			inflate = false;
-			print("space key was un pressed");
-		}
-		if (inflate && breath > 10) {
-			transform.localScale += new Vector3(0.1F, 0.1F, 0.1F);
-			sizeBallon += 1;
-			breath -= 1;
+        inflate |= Input.GetKeyDown("space");
+        inflate &= !Input.GetKeyUp("space");
+        if (inflate) {
+			transform.localScale += new Vector3(0.1F, 0.1F, 0.1F) * ( breath / 100);
+            sizeBallon += 1 * ( breath / 100);
+            if (breath > 0)
+				breath -= 1;
 		} else {
 			transform.localScale -= new Vector3(0.01F, 0.01F, 0.01F);
 			sizeBallon -= 0.1F;
-			if (breath <= 20)
+			if (breath <= 100)
 			{
-				breath += 1;
+				breath += 10;
 			}
 		}
 	}
