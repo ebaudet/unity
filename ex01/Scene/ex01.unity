@@ -214,8 +214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cube: {fileID: 1176330962358178, guid: ee32a772703684471a758841ca1ea0bb, type: 2}
-  spawnTime: 6
-  timer: 0
+  spawnTime: 5
+  timer: 5
 --- !u!4 &266833986
 Transform:
   m_ObjectHideFlags: 0
@@ -403,8 +403,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cube: {fileID: 1884955901594498, guid: 2d5a3e47cc76f406dae2d0a6e36ae2ae, type: 2}
-  spawnTime: 6
-  timer: 0
+  spawnTime: 5
+  timer: 5
 --- !u!4 &1010033709
 Transform:
   m_ObjectHideFlags: 0
@@ -665,8 +665,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cube: {fileID: 1041284419475376, guid: 50423af56cb4e4b73a77063ebfbc5a10, type: 2}
-  spawnTime: 6
-  timer: 0
+  spawnTime: 5
+  timer: 5
 --- !u!4 &1347277810
 Transform:
   m_ObjectHideFlags: 0
