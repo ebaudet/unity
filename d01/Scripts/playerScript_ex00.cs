@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class playerScript_ex00 : MonoBehaviour
 {
-
-	public GameObject player;
 	public string key;
 	public bool isActive;
 
@@ -29,7 +27,7 @@ public class playerScript_ex00 : MonoBehaviour
 		{
 			foreach (GameObject _player in _players)
 			{
-				_player.GetComponent<isActive>() = false;
+//				_player.GetComponent<isActive>() = false;
 			}
 
 			isActive = true;
