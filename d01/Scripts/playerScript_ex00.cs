@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class playerScript_ex00 : MonoBehaviour
 {
-	public string key;
-	public bool isActive;
-
-	private GameObject[] _players;
+	public string 			key;
+	public bool 			isActive;
+	private GameObject[] 	_players;
 	
 	// Use this for initialization
 	void Start ()
 	{
-		GameObject.FindGameObjectsWithTag("player");
+		_players = GameObject.FindGameObjectsWithTag("player");
 	}
 	
 	// Update is called once per frame
@@ -27,7 +26,7 @@ public class playerScript_ex00 : MonoBehaviour
 		{
 			foreach (GameObject _player in _players)
 			{
-//				_player.GetComponent<isActive>() = false;
+				_player.GetComponent<playerScript_ex00>().isActive = false;
 			}
 
 			isActive = true;
