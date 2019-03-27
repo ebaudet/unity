@@ -22,20 +22,14 @@ public class playerScript_ex00 : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-//		Debug.Log("keycode : " + KeyCode.Keypad4);
 		SelectPlayer();
-		if (isActive)
-		{
-			_mainCamera.transform.position = new Vector3(transform.localPosition.x, transform.localPosition.y, -10);
-			MovePlayer();
-		}
 	}
 
-	private void FixedUpdate()
+	void FixedUpdate()
 	{
 		if (isActive)
 		{
-			_mainCamera.transform.position = new Vector3(transform.localPosition.x, transform.localPosition.y + 3, -10);
+			_mainCamera.transform.position = new Vector3(transform.localPosition.x, transform.localPosition.y + 0.5F, -10);
 			MovePlayer();
 		}
 	}
@@ -44,9 +38,9 @@ public class playerScript_ex00 : MonoBehaviour
 	{
 		if (Input.GetKeyDown(key) || Input.GetKeyDown("["+key+"]"))
 		{
-			foreach (GameObject _player in _players)
+			foreach (GameObject player in _players)
 			{
-				_player.GetComponent<playerScript_ex00>().isActive = false;
+				player.GetComponent<playerScript_ex00>().isActive = false;
 			}
 
 			isActive = true;
@@ -59,7 +53,7 @@ public class playerScript_ex00 : MonoBehaviour
 		if (Input.GetKey("left"))
 		{
 			Debug.Log("move left");
-			GetComponent<Rigidbody2D>().AddForce(Vector2.left * speed);
+			GetComponent<Rigidbody2D>().AddForce(Vector2.left * speed * Time.deltaTime);
 //			GetComponent<Rigidbody2D>().transform.Translate(Vector3.left * Time.deltaTime);
 //			GetComponent<Rigidbody2D>().transform.tag(GetComponent<Rigidbody2D>().position + Vector2.left * Time.deltaTime * 5F);
 //			transform.positioven += new Vector3(-1, 0, 0) * Time.deltaTime;
@@ -73,12 +67,12 @@ public class playerScript_ex00 : MonoBehaviour
 		if (Input.GetKey("up") || Input.GetKey("space"))
 		{
 			Debug.Log("move up");
-			ContactPoint2D[] contacts = new ContactPoint2D[10];
-			GetComponent<Rigidbody2D>().GetContacts(contacts);
-			foreach (ContactPoint2D contact in contacts)
-			{
-				Debug.Log("contact pos("+contact.point.x + ", " + contact.point.y + ")");
-			}
+//			ContactPoint2D[] contacts = new ContactPoint2D[10];
+//			GetComponent<Rigidbody2D>().GetContacts(contacts);
+//			foreach (ContactPoint2D contact in contacts)
+//			{
+//				Debug.Log("contact pos("+contact.point.x + ", " + contact.point.y + ")");
+//			}
 			GetComponent<Rigidbody2D>().AddForce(Vector2.up * 10 * jump);
 //			GetComponent<Rigidbody2D>().transform.Translate(Vector3.up * Time.deltaTime);
 		}
