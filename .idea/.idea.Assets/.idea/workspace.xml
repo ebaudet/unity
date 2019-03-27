@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67047698-ba26-48b1-ba22-1f2bf0730a83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Assets/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Assets/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Assets/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Assets/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Assets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assets/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/d01/Scripts/playerScript_ex00.cs" beforeDir="false" afterPath="$PROJECT_DIR$/d01/Scripts/playerScript_ex00.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,26 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/d01/Scripts/playerScript_ex00.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-              <folding>
-                <marker date="1553705147537" expanded="false" signature="6:78" ph="..." />
-                <marker date="1553705147537" expanded="true" signature="126:617" ph="{...}" />
-                <marker date="1553705147537" expanded="true" signature="259:323" ph="{...}" />
-                <marker date="1553705147537" expanded="true" signature="378:403" ph="{...}" />
-                <marker date="1553705147537" expanded="true" signature="433:615" ph="{...}" />
-                <marker date="1553705147537" expanded="true" signature="465:612" ph="{...}" />
-                <marker date="1553705147537" expanded="true" signature="513:587" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,8 +28,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="140" />
-    <option name="y" value="43" />
+    <option name="x" value="-1780" />
+    <option name="y" value="-419" />
     <option name="width" value="1400" />
     <option name="height" value="987" />
   </component>
@@ -112,12 +90,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553701693812</updated>
-      <workItem from="1553701697155" duration="690000" />
+      <workItem from="1553701697155" duration="910000" />
+      <workItem from="1553719823570" duration="312000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="690000" />
+    <option name="totallyTimeSpent" value="1222000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -129,21 +108,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="140" y="43" width="1400" height="987" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1780" y="-419" width="1400" height="987" extended-state="0" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496318" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533137" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -151,18 +122,25 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -177,16 +155,25 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/d01/Scripts/playerScript_ex00.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="300">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
           <folding>
-            <marker date="1553705147537" expanded="false" signature="6:78" ph="..." />
-            <marker date="1553705147537" expanded="true" signature="126:617" ph="{...}" />
-            <marker date="1553705147537" expanded="true" signature="259:323" ph="{...}" />
-            <marker date="1553705147537" expanded="true" signature="378:403" ph="{...}" />
-            <marker date="1553705147537" expanded="true" signature="433:615" ph="{...}" />
-            <marker date="1553705147537" expanded="true" signature="465:612" ph="{...}" />
-            <marker date="1553705147537" expanded="true" signature="513:587" ph="{...}" />
+            <marker date="1553719735016" expanded="false" signature="6:121" ph="..." />
+            <marker date="1553719735016" expanded="true" signature="169:2267" ph="{...}" />
+            <marker date="1553719735016" expanded="true" signature="380:473" ph="{...}" />
+            <marker date="1553719735016" expanded="true" signature="528:746" ph="{...}" />
+            <marker date="1553719735016" expanded="true" signature="610:743" ph="{...}" />
+            <marker date="1553719735016" expanded="true" signature="775:934" ph="{...}" />
+            <marker date="1553719735016" expanded="true" signature="794:931" ph="{...}" />
+            <marker date="1553719735016" expanded="true" signature="964:1221" ph="{...}" />
+            <marker date="1553719735016" expanded="true" signature="1029:1218" ph="{...}" />
+            <marker date="1553719735016" expanded="true" signature="1077:1151" ph="{...}" />
+            <marker date="1553719735016" expanded="true" signature="1249:2265" ph="{...}" />
+            <marker date="1553719735016" expanded="true" signature="1280:1656" ph="{...}" />
+            <marker date="1553719735016" expanded="true" signature="1375:1651" ph="/* GetComponent&lt;Rigidbody2D&gt;().transform.Translate(Vector3.left * Time.deltaTime); ... */" />
+            <marker date="1553719735016" expanded="true" signature="1685:1785" ph="{...}" />
+            <marker date="1553719735016" expanded="true" signature="1836:2262" ph="{...}" />
+            <marker date="1553719735016" expanded="true" signature="2022:2110" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -26,7 +26,7 @@ public class playerScript_ex00 : MonoBehaviour
 		SelectPlayer();
 		if (isActive)
 		{
-			_mainCamera.transform.position = new Vector3(transform.localPosition.x, transform.localPosition.y + 3, -10);
+			_mainCamera.transform.position = new Vector3(transform.localPosition.x, transform.localPosition.y, -10);
 			MovePlayer();
 		}
 	}
@@ -59,7 +59,7 @@ public class playerScript_ex00 : MonoBehaviour
 		if (Input.GetKey("left"))
 		{
 			Debug.Log("move left");
-			GetComponent<Rigidbody2D>().AddForce(Vector2.left * 10 * speed);
+			GetComponent<Rigidbody2D>().AddForce(Vector2.left * speed);
 //			GetComponent<Rigidbody2D>().transform.Translate(Vector3.left * Time.deltaTime);
 //			GetComponent<Rigidbody2D>().transform.tag(GetComponent<Rigidbody2D>().position + Vector2.left * Time.deltaTime * 5F);
 //			transform.positioven += new Vector3(-1, 0, 0) * Time.deltaTime;
@@ -68,7 +68,7 @@ public class playerScript_ex00 : MonoBehaviour
 		if (Input.GetKey("right"))
 		{
 			Debug.Log("move rignt");
-			GetComponent<Rigidbody2D>().AddForce(Vector2.right * 10 * speed);
+			GetComponent<Rigidbody2D>().AddForce(Vector2.right * speed);
 		}
 		if (Input.GetKey("up") || Input.GetKey("space"))
 		{
